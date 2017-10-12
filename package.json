@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/pabloimrik17/node-site#readme",
   "dependencies": {
-    "express": "^4.16.2"
+    "express": "^4.16.2",
+    "nodemon": "^1.12.1"
   }
 }
