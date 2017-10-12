@@ -13,6 +13,7 @@
 // EXPRESS VERSION
 
 var express = require('express');
+var router = require('./app/routes');
 
 var app = express();
 var port = 8080;
@@ -21,6 +22,4 @@ app.listen(port, function() {
     console.log('App started');
 });
 
-app.get('/', function(req, res) {
-   res.send('Hello World!');
-});
+app.use('/', router);
