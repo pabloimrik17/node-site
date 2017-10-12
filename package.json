@@ -16,10 +16,6 @@
     "url": "https://github.com/pabloimrik17/node-site/issues"
   },
   "homepage": "https://github.com/pabloimrik17/node-site#readme",
-  "devDependencies": {
-    "eslint-config-airbnb-base": "^12.0.2",
-    "eslint-plugin-import": "^2.7.0"
-  },
   "dependencies": {
     "express": "^4.16.2"
   }
