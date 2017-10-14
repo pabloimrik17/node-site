@@ -13,10 +13,16 @@
 // EXPRESS VERSION
 
 var express = require('express');
-var router = require('./app/routes');
+var expressLayouts = require('express-ejs-layouts');
 
 var app = express();
-var port = 8080;
+var port = 8082;
+
+var router = require('./app/routes');
+
+// Asignamos Ejs como sistema de vistas
+app.set('view engine', 'ejs');
+app.use(expressLayouts);
 
 // Establecemos el fichero de rutas
 app.use('/', router);
