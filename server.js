@@ -18,8 +18,13 @@ var router = require('./app/routes');
 var app = express();
 var port = 8080;
 
+// Establecemos el fichero de rutas
+app.use('/', router);
+
+// Assets publicos
+app.use(express.static(__dirname+'/public'));
+
 app.listen(port, function() {
     console.log('App started');
 });
 
-app.use('/', router);
