@@ -26,5 +26,5 @@ router.get('/contact', function(req, res) {
 });
 
 router.post('/contact', function(req, res) {
-
+    res.render('pages/contact', { contactResponse: req.body.name })
 });

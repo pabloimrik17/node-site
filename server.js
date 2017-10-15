@@ -14,6 +14,7 @@
 
 var express = require('express');
 var expressLayouts = require('express-ejs-layouts');
+var bodyParser = require('body-parser');
 
 var app = express();
 var port = 8080;
@@ -23,6 +24,8 @@ var router = require('./app/routes');
 // Asignamos Ejs como sistema de vistas
 app.set('view engine', 'ejs');
 app.use(expressLayouts);
+
+app.use(bodyParser.urlencoded({ extended: true }));
 
 // Establecemos el fichero de rutas
 app.use('/', router);
